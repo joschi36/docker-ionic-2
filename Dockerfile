@@ -39,7 +39,7 @@ RUN cd /opt && wget https://dl.google.com/android/repository/sdk-tools-linux-385
      yes | ./sdkmanager --licenses && \
      ./sdkmanager --update && \
   cd /opt/android-sdk-linux/tools/bin/ && \
-      ./sdkmanager "build-tools;26.0.1" "docs" "emulator" "extras;android;m2repository" "extras;google;m2repository" "lldb;2.3" "platform-tools" "platforms;android-26" "extras;google;google_play_services" "extras;google;play_billing"
+      ./sdkmanager "build-tools;26.0.1" "docs" "emulator" "extras;android;m2repository" "extras;google;m2repository" "lldb;2.3" "platform-tools" "platforms;android-26"
 
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
